@@ -1,0 +1,83 @@
+/***animate class***/
+
+
+/*start side bar*/
+.side-bar.animate{width: 5%}
+ 
+.side-bar.animate .sidebar-head span:not(.icon){display: none}
+
+.side-bar.animate a,
+.side-bar.animate h5,
+.side-bar.animate .fa-chevron-down,
+.side-bar.animate .active::after{display: none;transition: all 5s ease-in-out}
+
+
+.sidebar-item{
+   width: 100%;
+}
+
+.side-bar.animate .icon:first-of-type{
+ display: grid;
+ justify-content: center;
+align-content: center;
+align-items: center;
+grid-template-columns: 100% ;
+width: 100% !important;}
+
+
+.side-bar.animate .icon i{
+   text-align: center !important; 
+}
+
+.side-bar.animate .sidebar-item.active{
+   width: 100%;
+}
+
+.side-bar.animate .sidebar-item.active .icon{
+   display: grid;
+   justify-content: space-between;
+   align-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.side-bar.animate .sidebar-item.active .icon i{
+   text-align: center;
+   width: 100%;
+}
+
+.side-bar.animate .title{display: none; text-align: center;}
+
+.side-bar.animate .sidebar-head{padding: 18px 0 !important} 
+ 
+.side-bar.animate .sidebar-head .icon i{
+   transform:rotateZ(180deg);
+   transition:all 0.5s ease-in-out;
+   color: var(--sideheadspan-color)} 
+
+.side-bar.animate .other-sidebar-items .sidebar-item {display: flex;justify-content: center}
+/*end side bar*/
+
+/*start dark icon*/
+.dark-mood.animate{
+ left: 23%;
+ transition: all 0.5s ease-in-out} 
+/*end dark icon*/
+
+/*start nav*/
+nav.animate{
+ width: 95%;
+ margin-left:5%;
+ transition:all 0.5s ease-in-out}
+/*end nav*/
+
+/*start main-content*/
+.main-content.animate{
+   width: 95%;
+   margin-left: 5%;
+   transition: all 0.5s ease-in-out}
+/*end main-content*/
+ 
+/*start footer*/
+.footer.animate {margin-left: 18%}
+/*end footer*/

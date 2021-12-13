@@ -1,0 +1,60 @@
+
+/*star dark mood*/
+.dark-mood {
+position: fixed;
+bottom: 2%;
+left: 7%;
+z-index: 999;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background:#db1430;
+text-align: center;
+overflow: hidden;
+box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.5);
+transition: all 0.5s ease-in-out}
+
+.dark-mood i{
+ color: #FFF;
+ cursor: pointer}
+ 
+ .fa-sun{
+  z-index:200;
+  transform: translateY(-62px);
+  color: #FFD540 !important;
+  margin: 5px 0;}
+  
+ .fa-sun.dark{
+  transform: translateY(-32px);
+  background:transparent;
+  transition: all 0.5s ease-in-out}
+
+ .fa-cloud-moon{
+  z-index: 400;
+  margin: 13px 0;
+  transition: all 0.5s ease-in-out}
+  
+.fa-cloud-moon.dark{
+ transform: translateY(30px);
+ background:transparent;
+ transition: all 0.5s ease-in-out}
+
+ :root{
+--dark-backg:#272534;
+--dark-text:#FFF;
+--div-shadow:0px 1px 2px 2px rgba(0,0,0,0.1);}
+
+.dark{
+ background:var(--dark-backg);
+ color:#FFF }
+/*end dark mood*/
+
+.to-do-list.dark{border-left:10px solid var(--dark-backg) }
+
+.custome-chart-three.dark{border-right:10px solid var(--dark-backg) }
+
+.custome-chart,.cards-section,.activities,.custome-chart-two{box-shadow: var(--div-shadow)}
+
+.custome-chart-three,.to-do-list{box-shadow: 1px -2px 5px 0px rgb(0 0 0 / 10%)}
+
+.custome-chart.dark .chart-head .fa-braille{color: #F1416C}
